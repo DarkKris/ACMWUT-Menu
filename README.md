@@ -14,6 +14,15 @@
 - TypeScript
 - Less
 
+## Usage
+
+```bash
+$ npm install # 下载依赖包
+$ npm run build # 编译
+
+$ npm run dev # 开发测试
+```
+
 ## Developer
 
 - DeAnti-

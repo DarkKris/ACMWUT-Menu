@@ -1,5 +1,11 @@
 :root {
+  --background-color: #17171c;
+  --foreground-color: #e3e3e3;
+  --icpc-red: rgb(164, 55, 37);
+  --icpc-yellow: rgb(249, 213, 78);
+  --icpc-blue: rgb(87, 131, 190);
 
+  --header-height: 70px;
 }
 
 * {
@@ -11,4 +17,6 @@ html, body, #app {
   height: 100%;
   margin: 0;
   padding: 0;
+
+  background-color: var(--background-color);
 }

@@ -28,6 +28,7 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
     alias: { // 路径别名，写起来更优雅
+      "@": resolve("src"),
       "pages": resolve("src/pages"),
       "components": resolve("src/components"),
       "config": resolve("src/config"),
@@ -37,7 +38,7 @@ module.exports = {
   devtool: "source-map",
   module: {
     rules: [ // 配置解析规则，为被正则匹配到的文件指定不同的loader
-      { test: /\.less$/, use: [ "style-loader", "css-loader", "lessss-loader" ] },// loader链，从右至左解析输出文件
+      { test: /\.less$/, use: [ "style-loader", "css-loader", "less-loader" ] },// loader链，从右至左解析输出文件
       { test: /\.tsx?$/, loader: "babel-loader" },
       { test: /\.tsx?$/, loader: "ts-loader" },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }

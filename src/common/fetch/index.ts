@@ -41,6 +41,7 @@ export default async function ifetch(
     const headerData = Object.assign({
         Accept: "application/json",
         "Content-Type": "application/json",
+        "Cache-Control": "no-cache",
         Charset: "utf-8",
     }, headers);
 

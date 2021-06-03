@@ -1,0 +1,55 @@
+@import "@/common.less";
+
+.light-effect {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 0;
+
+  width: 100vw;
+  top: -50px;
+
+  > * {
+    width: 0;
+    height: 0;
+  }
+
+  &__red {
+    box-shadow: 2vw -8vw 15vw 20vw var(--icpc-red);
+  }
+
+  &__yellow {
+    box-shadow: 0 -8vw 15vw 20vw var(--icpc-yellow);
+  }
+
+  &__blue {
+    box-shadow: -2vw -8vw 15vw 20vw var(--icpc-blue);
+  }
+}
+
+.index-page {
+  .-full-size();
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  z-index: 1;
+}
+
+.index-page__header {
+  position: fixed;
+  width: 100vw;
+  height: var(--header-height);
+}
+
+.index-page__content {
+
+  .content__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    .-page-title();
+  }
+}
